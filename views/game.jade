@@ -1,0 +1,44 @@
+extends layout
+
+block content
+    div(id="cur_user") #{username}
+    select(id="colorPickerOne")
+        option(value="blue") blue
+        option(value="red") red
+        option(value="green") green
+        option(value="yellow") yellow
+        option(value="orange") orange
+        option(value="black") black
+        option(value="white") white
+        option(value="cyan") cyan
+        option(value="gold") gold
+        option(value="brown") brown
+        option(value="pink") pink
+        option(value="violet") violet
+        option(value="purple") purple
+        option(value="lime") lime
+    select(id="colorPickerTwo")
+        option(value="red") red
+        option(value="blue") blue
+        option(value="green") green
+        option(value="yellow") yellow
+        option(value="orange") orange
+        option(value="black") black
+        option(value="white") white
+        option(value="cyan") cyan
+        option(value="gold") gold
+        option(value="brown") brown
+        option(value="pink") pink
+        option(value="violet") violet
+        option(value="purple") purple
+        option(value="lime") lime
+    br
+    canvas(id="canvas",width="200",height="200")
+    script(src="/socket.io/socket.io.js" type="text/javascript")
+    script(src="javascripts/game.js", type="text/javascript")
+
+
+
+
+
+
